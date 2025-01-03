@@ -85,7 +85,7 @@ if __name__ == '__main__':
     #                     help='Stage.')
     # args = parser.parse_args()
     con = 'evoconv2-config'
-    data = ['bike']
+    data = ['taxi']
     with open(os.path.join('config', f'{con}.yaml')) as f:
         conf = yaml.safe_load(f)
     train(conf, data)
